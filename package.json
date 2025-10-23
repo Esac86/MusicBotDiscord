@@ -1,11 +1,12 @@
 {
   "name": "music-bot-discord",
   "version": "1.0.0",
-  "description": "Bot de música para Discord con reproducción de YouTube",
+  "description": "Bot de música para Discord con reproducción de YouTube usando comandos slash",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
   },
   "keywords": [
     "discord",
@@ -13,17 +14,21 @@
     "music",
     "youtube",
     "discord-bot",
-    "music-bot"
+    "music-bot",
+    "slash-commands"
   ],
   "author": "Esac86",
   "license": "MIT",
   "dependencies": {
     "@discordjs/opus": "^0.10.0",
     "@discordjs/voice": "^0.19.0",
+    "@distube/ytdl-core": "^4.14.4",
     "discord.js": "^14.23.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "ytdl-core": "^4.11.5",
     "ytsr": "^3.8.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
