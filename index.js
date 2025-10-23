@@ -57,18 +57,19 @@ const commands = [
 async function registerCommands() {
   try {
     const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN)
-    console.log('Registrando comandos slash...')
+    console.log('Registrando comandos slash en el servidor...')
 
     await rest.put(
-      Routes.applicationCommands(process.env.CLIENT_ID),
+      Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID),
       { body: commands }
     )
 
-    console.log('Comandos slash registrados correctamente')
+    console.log('Comandos slash registrados correctamente en tu servidor')
   } catch (error) {
     console.error('Error registrando comandos:', error)
   }
 }
+
 
 async function searchYouTube(query) {
   try {
