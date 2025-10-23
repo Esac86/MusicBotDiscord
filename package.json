@@ -25,8 +25,9 @@
     "@distube/ytdl-core": "^4.14.4",
     "@snazzah/davey": "^0.1.7",
     "discord.js": "^14.23.2",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "play-dl": "^1.9.7",
     "ytsr": "^3.8.4"
   },
   "engines": {
