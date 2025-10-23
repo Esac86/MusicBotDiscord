@@ -1,0 +1,29 @@
+{
+  "name": "music-bot-discord",
+  "version": "1.0.0",
+  "description": "Bot de música para Discord con reproducción de YouTube",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "music",
+    "youtube",
+    "discord-bot",
+    "music-bot"
+  ],
+  "author": "Esac86",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.10.0",
+    "@discordjs/voice": "^0.19.0",
+    "discord.js": "^14.23.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ytdl-core": "^4.11.5",
+    "ytsr": "^3.8.4"
+  }
+}
